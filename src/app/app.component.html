@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">Player 1</div>
+    <div (click)="checkCondtions()" class="col-md-8 game">
+      <div class="row">
+        <div id="1" (click)="play($event)" class="gameInput col-md-3">
+          {{ gameIn1 }}
+        </div>
+        <div id="2" (click)="play($event)" class="gameInput col-md-3 border1">
+          {{ gameIn2 }}
+        </div>
+        <div id="3" (click)="play($event)" class="gameInput col-md-3">
+          {{ gameIn3 }}
+        </div>
+      </div>
+      <div class="row">
+        <div id="4" (click)="play($event)" class="gameInput col-md-3 border2">
+          {{ gameIn4 }}
+        </div>
+        <div
+          id="5"
+          (click)="play($event)"
+          class="gameInput col-md-3 border1 border2"
+        >
+          {{ gameIn5 }}
+        </div>
+        <div id="6" (click)="play($event)" class="gameInput col-md-3 border2">
+          {{ gameIn6 }}
+        </div>
+      </div>
+      <div class="row">
+        <div id="7" (click)="play($event)" class="gameInput col-md-3">
+          {{ gameIn7 }}
+        </div>
+        <div id="8" (click)="play($event)" class="gameInput col-md-3 border1">
+          {{ gameIn8 }}
+        </div>
+        <div id="9" (click)="play($event)" class="gameInput col-md-3">
+          {{ gameIn9 }}
+        </div>
+      </div>
+      <p style="margin-top: 10px">{{ status }}</p>
+      <button (click)="restart()">Restart</button>
+    </div>
+    <div class="col-md-2">Player 2</div>
+  </div>
+</div>
